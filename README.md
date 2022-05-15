@@ -297,7 +297,7 @@ import {
   AppFormField,  // simple text input component
   AppSubmitButtonSmall, // a small submit button component
   AppFormCheckBoxes, // component for multi-select checkboxes
-  AppFormRadio, // compinent for checkboxes
+  AppFormRadio, // component for radiobuttons
   ...
   } from "@manatsa/simple-react-native-formik-wizard";
 
