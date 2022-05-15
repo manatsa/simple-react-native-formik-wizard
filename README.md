@@ -25,10 +25,9 @@ I searched and searched but could not find it..!! I was busy looking for a react
 
 ## Screenshots
 
-```md
-    ![alt screenshot1](assets/images/screen1.png)
-    ![alt screenshot2](assets/images/screen2.png)
-```
+<image alt='screenshot0' src="assets/images/screen0.png">
+<image alt='screenshot1' src="assets/images/screen1.png">
+<image alt='screenshot2' src="assets/images/screen2.png">
 
 ## Usage
 
