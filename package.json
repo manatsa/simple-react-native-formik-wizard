@@ -5,7 +5,7 @@
   },
   "name": "@manatsa/simple-react-native-formik-wizard",
   "description": "A simplified way of implementing a react native multi-step form using formik and yup.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
