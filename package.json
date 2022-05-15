@@ -2,5 +2,31 @@
   "dependencies": {
     "formik": "^2.2.9",
     "yup": "^0.32.11"
-  }
+  },
+  "name": "@mana/simple-react-native-formik-wizard",
+  "description": "A simplified way of implementing a react native multi-step form using formik and yup.",
+  "version": "1.0.0",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manatsa/simple-react-native-formik-wizard.git"
+  },
+  "keywords": [
+    "react-native-formik",
+    "formik",
+    "wizard",
+    "multi-step",
+    "multiple-step",
+    "stepper",
+    "yup"
+  ],
+  "author": "Manatsa Chinyeruse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manatsa/simple-react-native-formik-wizard/issues"
+  },
+  "homepage": "https://github.com/manatsa/simple-react-native-formik-wizard#readme"
 }

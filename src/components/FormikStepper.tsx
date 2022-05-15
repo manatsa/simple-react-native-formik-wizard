@@ -1,7 +1,6 @@
 import { ScrollView, StyleSheet, View } from "react-native";
 import React, { ReactNode, useState } from "react";
 import StepIndicator from "../stepper/Indicator";
-import constants from "expo-constants";
 
 interface FormikStepperProps {
   steps: { key: number; value: ReactNode };
@@ -11,6 +10,13 @@ interface FormikStepperProps {
   onSubmit: (val: any, func: (val: any) => void) => void;
   mergedValues: {};
   setMergedValues: (val: any) => void;
+  defaultStepColor?: string;
+  completedStepColor?: string;
+  defaultStepNumberColor?: string;
+  completedStepNumberColor?: string;
+  stepNumberFontSize?: number;
+  stepLabelFontSize?: number;
+  activeStepColor?: string;
 }
 
 /**
@@ -34,6 +40,13 @@ export default function FormikStepper({
   onSubmit,
   mergedValues,
   setMergedValues,
+  defaultStepColor,
+  completedStepColor,
+  defaultStepNumberColor,
+  completedStepNumberColor,
+  stepNumberFontSize,
+  stepLabelFontSize,
+  activeStepColor,
 }: FormikStepperProps) {
   const [currentStep, setCurrentStep] = useState(0);
 
@@ -78,17 +91,25 @@ export default function FormikStepper({
 
   const currentStepComponent: any = steps[currentStep];
 
+  if (Object.keys(steps).length !== stepLabels.length) {
+    throw new Error(
+      "Number of defined steps should match number of step labels."
+    );
+  }
+
   return (
     <>
       <View style={styles.stepperContainer}>
         <StepIndicator
           currentStep={currentStep + 1}
           labels={stepLabels}
-          completedStepColor="orange"
-          defaultStepColor="pink"
-          completedStepNumberColor="blue"
-          defaultStepNumberColor="purple"
-          activeStepColor="violet"
+          completedStepColor={completedStepColor}
+          defaultStepColor={defaultStepColor}
+          completedStepNumberColor={completedStepNumberColor}
+          defaultStepNumberColor={defaultStepNumberColor}
+          activeStepColor={activeStepColor}
+          labelFontSize={stepLabelFontSize}
+          stepNumberFontSize={stepNumberFontSize}
         />
       </View>
 
@@ -112,7 +133,6 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
   },
   stepperContainer: {
-    marginTop: constants.statusBarHeight + 10,
     marginBottom: 20,
     width: "100%",
     height: 65,

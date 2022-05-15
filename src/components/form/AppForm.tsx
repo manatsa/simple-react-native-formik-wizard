@@ -5,7 +5,7 @@ interface AppFormProps {
   initialValues: {}[];
   onSubmit: (val: any) => void;
   validationSchema: {}[];
-  children: any;
+  children?: any;
 }
 
 const AppForm = ({

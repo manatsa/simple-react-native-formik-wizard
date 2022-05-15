@@ -15,20 +15,23 @@ type AppFormCheckBoxesType = {
   label: string;
   items: {}[];
   callback?: (val: any) => void;
+  boxColor?: string;
+  checkedColor?: string;
+  unCheckedColor?: string;
+  boxSize?: number;
+  labelPosition?: "start" | "end";
 };
-
-// type fromFormik = {
-//   values: { key: string; value: string };
-//   setFieldValue: (val: any) => void;
-//   errors: { key: string; value: string };
-//   touched: { key: string; value: boolean };
-// };
 
 function AppFormCheckBoxes({
   name,
   label,
   items,
   callback,
+  boxColor,
+  checkedColor,
+  unCheckedColor,
+  boxSize,
+  labelPosition,
 }: AppFormCheckBoxesType) {
   const { values, setFieldValue, errors, touched } = useFormikContext();
 
@@ -66,11 +69,14 @@ function AppFormCheckBoxes({
                       ? true
                       : false
                   }
-                  key={"box-" + index}
                   onValueChange={(value) =>
                     onValueChange(value, item as ItemType)
                   }
-                  boxColor="purple"
+                  boxColor={boxColor}
+                  checkedColor={checkedColor}
+                  unCheckedColor={unCheckedColor}
+                  boxSize={boxSize}
+                  labelPosition={labelPosition}
                 />
                 <Text style={styles.checkText}>{(item as ItemType).label}</Text>
               </View>

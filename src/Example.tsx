@@ -20,11 +20,10 @@ export default function Example() {
 
   const initialValues = [
     {
-      fullName: "",
-      gender: "",
-      age: "",
-      category: 0,
-      isItTrue: false,
+      fullName: "", // text field
+      gender: "", // picker component
+      category: 0, // Number input component
+      isItTrue: false, // switch component
     },
     {
       progLang: [], // multiselect checkboxes
@@ -43,7 +42,6 @@ export default function Example() {
           (name: any) => name && name.split(" ").length > 1
         ),
       gender: yup.string().required("required"),
-      age: yup.number().positive("Age must be positive"),
       category: yup.number().min(1, "Number to be positive"),
     }),
     yup.object().shape({
@@ -74,18 +72,6 @@ const Step1 = ({ initValues, validationSchema, onNextStep, onBack }) => {
     { label: "Male", value: "0" },
     { label: "Female", value: "1" },
     { label: "Other", value: "2" },
-    { label: "T1", value: "3" },
-    { label: "Xsgha", value: "4" },
-    { label: "Linda", value: "5" },
-    { label: "Jayz", value: "6" },
-    { label: "Rita", value: "7" },
-    { label: "Gayther", value: "8" },
-    { label: "Valery", value: "9" },
-    { label: "Rima", value: "10" },
-    { label: "Edward chirichogaumwecheteAndonemorethings", value: "11" },
-    { label: "Simba", value: "12" },
-    { label: "Heydon", value: "13" },
-    { label: "Watson", value: "14" },
   ];
   return (
     <AppForm
