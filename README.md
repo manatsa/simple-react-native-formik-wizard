@@ -299,7 +299,7 @@ import {
   AppFormCheckBoxes, // component for multi-select checkboxes
   AppFormRadio, // compinent for checkboxes
   ...
-  } from "@mana/simple-react-native-formik-wizard";
+  } from "@manatsa/simple-react-native-formik-wizard";
 
 
 export default function Example() {

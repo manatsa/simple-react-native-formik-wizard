@@ -3,9 +3,9 @@
     "formik": "^2.2.9",
     "yup": "^0.32.11"
   },
-  "name": "@mana/simple-react-native-formik-wizard",
+  "name": "@manatsa/simple-react-native-formik-wizard",
   "description": "A simplified way of implementing a react native multi-step form using formik and yup.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
