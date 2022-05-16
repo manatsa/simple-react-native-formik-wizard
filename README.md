@@ -25,9 +25,9 @@ I searched and searched but could not find it..!! I was busy looking for a react
 
 ## Screenshots
 
-<image alt='screenshot0' src="assets/images/screen0.png" width="200px" height="400px" style="margin: 20px;" />
-<image alt='screenshot1' src="assets/images/screen1.png" width="200px" height="400px" style="margin: 20px;"  />
-<image alt='screenshot2' src="assets/images/screen2.png" width="200px" height="400px" style="margin: 20px;"  />
+<image alt='screenshot0' src="assets/images/screen0.png"  height="400px" style="display: inline-block; margin: 0 auto; max-width: 300px" />
+<image alt='screenshot1' src="assets/images/screen1.png"  height="400px" style="display: inline-block; margin: 0 auto; max-width: 300px" />
+<image alt='screenshot2' src="assets/images/screen2.png"  height="400px" style="display: inline-block; margin: 0 auto; max-width: 300px" />
 
 ## Usage
 
